@@ -1,6 +1,6 @@
-# *Hello!*
----
+## My Portfolio website
 
-## This is the repo for my portfolio.
-## Within the site are links to my github, web projects, and my Linkedin.
-## Thanks again for visiting !
+Hello, this is the repo for my portfolio website, using github pages! Within the site are links to my github for web projects, and my LinkedIn.  
+\
+\
+**Thanks for visiting !**

@@ -9,16 +9,15 @@ html{
 #menu{
 	position: fixed;
 	top: 0;
-	border: 1rem solid rgb(122, 174, 194);
 	margin-top: 0;
-	left: 5rem;
-	right: 5rem;
-	background: skyblue;
+	left: 0;
+	right: 0;
+	background: lightsteelblue;
 }
 
 #menu > ul{
 	margin: 0;
-	padding: 1.5rem;
+	padding: 1rem;
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-around;
@@ -30,6 +29,7 @@ html{
 }
 
 #menu > ul > li > a{
+	padding: 5px;
 	font-family: Trebuchet MS, Arial, sans-serif;
 	font-size: 2.1rem;
 	font-weight: bold;
@@ -38,25 +38,29 @@ html{
 }
 
 #menu > ul > li > a:hover{
+	border: 3px dotted black;
+	color: blue;
 	text-decoration: underline; 
 }
 
 
-
 body{
-	height: 1200px;
+	height: 800px;
 	margin-top: 0;
-	background-color: rgb(102, 102, 255);
+	background-color: lightblue;
 	padding: 20px 20px 20px 20px;
 }
 
 header{
-	max-width: 900px;
-	margin-top: 120px;
+	max-width: 64%;
+	margin-top: 76px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: rgb(128, 128, 255);
+	background-color: slategrey;
 }
+
+
+
 
 header > h1{
 	margin: 0;
@@ -69,14 +73,50 @@ header > h1{
 
 main{
 	border-radius: 4px;
-	background-color: white;
-	max-width: 1000px;
-	margin-top: 90px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 10px;
+	max-width: fit-content;
 	padding: 7px;
+	justify-self: center;
 }
+
+#mainDiv{
+	overflow: auto;
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mainDiv div{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+	border-radius: 3px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1.7rem;
+	padding: 1rem;
+	text-align: center;
+	background-color: white;
+	border: 1px solid black;
+}
+
+
+#mainDiv div p{
+	font-family: monospace;
+	font-size: 1.8rem;
+}
+
+
+#mainDiv div p:hover{
+	color: green;
+	border-left: 4px solid green;
+	border-right: 4px solid green;
+}
+
 
 main h2{
 	font-size: 2.7rem;
@@ -86,39 +126,36 @@ main h2{
 
 /* Styling for discs inside main */
 
-section.discs{
+section{
 	padding: 7px;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 3px;
-	max-width: 98%;
 	background-color: rgb(109, 211, 116);
 }
 
-section.discs > p{
-	max-width: 84%;
-	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
-	font-size: 1.8rem;
+section > p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+	font-size: 1.9rem;
 	padding: 0 0 .5rem .5rem; 
 }
 
-section.discs:nth-child(1) {
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	margin-bottom: 5px;
-}
-section.discs:nth-child(2) {
-	margin-bottom: 5px;
-}
-
-/* Styling for discs inside main */
-
-
 /* home page image styling */
+
+figure{
+    margin-left: 0;
+    margin-right: 0;
+}
+
 
 main > figure > img{
 	max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 body > footer{
