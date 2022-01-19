@@ -52,11 +52,13 @@ body{
 }
 
 header{
-	max-width: 64%;
+	background-color: slategrey;
+	border-radius: 9px;
+	max-width: max-content;
 	margin-top: 76px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: slategrey;
+	padding: 10px;
 }
 
 
